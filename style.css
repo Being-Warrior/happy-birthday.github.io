@@ -20,6 +20,7 @@
             perspective: 1000px;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
+      animation : bg-animation 20s infinite;
   }
   
   #drag-container, #spin-container {
@@ -94,7 +95,15 @@
               transform: rotateY(360deg);
     }
   }
-  
+
+@keyframes bg-animation{
+    0%{ background-color: #69779b;}
+     25%{ background-color: #f8b500;}
+     50%{ background-color: #212121;}
+     75%{ background-color: #064acb;}
+     100%{ background-color: #69779b;}
+    
+}
   @keyframes spin {
     from{
       -webkit-transform: rotateY(0deg);
